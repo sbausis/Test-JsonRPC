@@ -16,6 +16,10 @@ $server->register('random', function ($start, $end) {
     return mt_rand($start, $end);
 });
 
+$server->register('hello', function () {
+    return 'world';
+});
+
 // Return the response to the client
 echo $server->execute();
 
